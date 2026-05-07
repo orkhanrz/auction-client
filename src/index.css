@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: 'Plus Jakarta Sans', sans-serif;
+  --text-2xs: 10px; 
+  --text-3xs: 9px;
+  --color-bg:         #F5F4F0;
+  --color-surface:    #FFFFFF;
+  --color-surface-2:  #F0EFE9;
+  --color-surface-3:  #E8E7E0;
+  --color-border:     #E2E1DA;
+  --color-border-2:   #CCCBC2;
+  --color-text:       #18181A;
+  --color-text-2:     #5C5B58;
+  --color-text-3:     #9B9A96;
+  --color-accent:     #1A1A1A;
+  --color-accent-inv: #FFFFFF;
+  --color-lime:       #2D7A2D;
+  --color-lime-bg:    #EAF4EA;
+  --color-lime-text:  #1A4D1A;
+  --color-red:        #C0392B;
+  --color-red-bg:     #FDECEA;
+  --color-red-text:   #7F1D1D;
+  --color-green:      #16A34A;
+  --color-topbar-bg:  #18181A;
+  --color-topbar-text:#E8E7E0;
+}
+
+body {
+  font-family: var(--font-sans);
+}
+
+.dark {
+  --color-bg:          #0F0F0F;
+  --color-surface:     #181818;
+  --color-surface-2:   #222222;
+  --color-surface-3:   #2C2C2C;
+  --color-border:      #2E2E2E;
+  --color-border-2:    #3E3E3E;
+  --color-text:        #EDECE8;
+  --color-text-2:      #A09E9A;
+  --color-text-3:      #636260;
+  --color-accent:      #E8F435;
+  --color-accent-inv:  #111111;
+  --color-lime:        #E8F435;
+  --color-lime-bg:     rgba(232, 244, 53, 0.08);
+  --color-lime-text:   #B8C22A;
+  --color-red:         #FF5555;
+  --color-red-bg:      rgba(255, 85, 85, 0.1);
+  --color-red-text:    #FFAAAA;
+  --color-green:       #4ADE80;
+  --color-topbar-bg:   #E8F435;
+  --color-topbar-text: #111111;
+}
