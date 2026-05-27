@@ -6,7 +6,8 @@ type Props = {
 	iconPosition?: "left" | "right";
 	style?: React.CSSProperties;
 	type?: "button" | "submit" | "reset";
-	variant?: "primary" | "secondary";
+	fullWidth?: boolean;
+	variant?: "primary" | "secondary" | "tertiary";
 };
 
 export default function Button({
@@ -14,17 +15,22 @@ export default function Button({
 	icon,
 	iconPosition = "left",
 	style,
+	fullWidth = false,
 	variant = "primary",
 }: Props) {
-	const btnClasses =
+	const btnClasses = `${
 		variant === "primary"
 			? "bg-topbar-bg border-topbar-bg"
-			: "bg-surface border-border-2";
-	const textClr = variant === "primary" ? "text-accent-inv" : "text-text";
+			: variant === "secondary"
+				? "bg-surface border-border-2"
+				: "bg-surface-2 border-border-2"
+	}  ${fullWidth ? "w-full" : ""}`;
+
+	const textClr = `${variant === "primary" ? "text-accent-inv" : "text-text"}`;
 
 	return (
 		<button
-			className={`${textClr} ${btnClasses} flex items-center gap-1 border rounded-lg text-sm font-semibold py-2.5 px-7 cursor-pointer`}
+			className={`${textClr} ${btnClasses} flex items-center justify-center gap-1 border rounded-lg text-sm font-semibold py-2.5 px-7 cursor-pointer`}
 			style={style}
 		>
 			{icon && iconPosition === "left" && <span className="mr-2">{icon}</span>}

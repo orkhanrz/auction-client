@@ -1,4 +1,4 @@
-import type { IAuction, ICategory, IFilter } from "./models";
+import type { IAuction, ICategory, IOption } from "./models";
 
 export const categories: ICategory[] = [
 	{
@@ -74,56 +74,104 @@ export const auctionItems: IAuction[] = [
 export const categoryFilters = [
 	{
 		label: "Electronics",
-		name: "electronics",
+		value: "electronics",
 	},
 	{
 		label: "Appliances",
-		name: "appliances",
+		value: "appliances",
 	},
 	{
 		label: "Fashion",
-		name: "fashion",
+		value: "fashion",
 	},
 	{
 		label: "Furniture",
-		name: "furniture",
+		value: "furniture",
 	},
 	{
 		label: "Collectibles",
-		name: "collectibles",
+		value: "collectibles",
 	},
 ];
 
 export const conditionFilters = [
 	{
 		label: "New",
-		name: "new",
+		value: "new",
 	},
 	{
 		label: "Like new",
-		name: "likeNew",
+		value: "likeNew",
 	},
 	{
 		label: "Good",
-		name: "good",
+		value: "good",
 	},
 	{
 		label: "Fair",
-		name: "fair",
+		value: "fair",
 	},
 ];
 
-export const endingFilters: IFilter[] = [
+export const endingFilters: IOption[] = [
 	{
-		label: "Withing 1 hour",
-		name: "hour",
+		label: "1 day",
+		value: "1",
 	},
 	{
-		label: "Within 24 hours",
-		name: "day",
+		label: "3 days",
+		value: "3",
 	},
 	{
-		label: "This week",
-		name: "week",
+		label: "5 days",
+		value: "5",
+	},
+	{
+		label: "7 days",
+		value: "7",
+	},
+];
+
+export const estimatedDelivers = [
+	{
+		label: "2-3 business day",
+		value: "2-3",
+	},
+	{
+		label: "3-5 business day",
+		value: "3-5",
+	},
+	{
+		label: "5-7 business day",
+		value: "5-7",
+	},
+	{
+		label: "1-2 weeks",
+		value: "7-14",
+	},
+	{
+		label: "Local pickup only",
+		value: "local",
+	},
+];
+
+export const auctionBidHistoryItems = [
+	{
+		id: 1,
+		username: "orkhan_rz",
+		time: "2h 14m",
+		price: 163,
+	},
+	{
+		id: 2,
+		username: "tale_agalarov",
+		time: "3h 10m",
+		price: 158,
+	},
+	{
+		id: 3,
+		username: "omar_bayramli",
+		time: "4h 10m",
+		price: 153,
 	},
 ];

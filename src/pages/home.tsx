@@ -3,9 +3,9 @@ import AuctionCategories from "../components/auction/auction-categories";
 import Auctionitems from "../components/auction/auction-items";
 import HotItems from "../components/hot-items";
 import StatisticsButton from "../components/statistics-btn";
-import Button from "../components/ui/button";
-import Container from "../components/ui/container";
-import Content from "../components/ui/content";
+import Button from "../components/ui/shared/button";
+import Container from "../components/ui/shared/container";
+import Content from "../components/ui/shared/content";
 import { auctionItems, categories } from "../data";
 import { Link } from "react-router-dom";
 
@@ -51,7 +51,7 @@ export default function Home() {
 				</Container>
 			</section>
 
-			<section>
+			<section className="bg-surface">
 				<Container>
 					<Content className="py-11 md:px-8">
 						<div className="flex justify-between items-center mb-4">
@@ -59,7 +59,9 @@ export default function Home() {
 								<h4 className="text-xs font-bold uppercase text-text-3 mb-3">
 									Marketplace
 								</h4>
-								<h3 className="text-xl font-extrabold">Live auctions</h3>
+								<h3 className="text-text text-xl font-extrabold">
+									Live auctions
+								</h3>
 							</div>
 
 							<Link

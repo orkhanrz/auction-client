@@ -13,7 +13,13 @@ export interface IAuction {
 	timeLeft: string;
 }
 
-export interface IFilter {
+export interface IOption {
 	label: string;
-	name: string;
+	value: string;
+}
+
+export interface IAuctionBidHistoryItem {
+	username: string;
+	time: string;
+	price: number;
 }

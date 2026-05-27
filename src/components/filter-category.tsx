@@ -1,5 +1,5 @@
 import type { IFilter } from "../models";
-import Checkbox from "./ui/checkbox";
+import Checkbox from "./ui/shared/checkbox";
 
 type Props = {
 	title: string;

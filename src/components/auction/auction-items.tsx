@@ -1,12 +1,12 @@
-import type { IAuctionItem } from "../../models";
+import type { IAuction } from "../../models";
 import AuctionItem from "./auction-item";
 
 type Props = {
-	items: IAuctionItem[];
+	items: IAuction[];
 	className?: string;
 };
 
-export default function Auctionitems({ items, className }: Props) {
+export default function AuctionItems({ items, className }: Props) {
 	return (
 		<div className={`grid gap-4 ${className || ""}`}>
 			{items.map((item) => (

@@ -1,11 +1,15 @@
 import { BsArrowRight } from "react-icons/bs";
 import Img from "../../assets/images/sony-headphones.jpg";
-import type { IAuctionItem } from "../../models";
+import type { IAuction } from "../../models";
 import AuctionImageBadge from "./auction-image-badge";
+import { Link } from "react-router-dom";
 
-export default function AuctionItem({ item }: { item: IAuctionItem }) {
+export default function AuctionItem({ item }: { item: IAuction }) {
 	return (
-		<div className="rounded-xl overflow-hidden border border-border cursor-pointer">
+		<Link
+			to={`/auctions/${item.id}`}
+			className="rounded-xl overflow-hidden border border-border cursor-pointer"
+		>
 			<div className="image-wrapper relative">
 				<img src={Img} alt="Auction Item" className="w-full object-cover" />
 				<AuctionImageBadge
@@ -38,6 +42,6 @@ export default function AuctionItem({ item }: { item: IAuctionItem }) {
 					Place bid <BsArrowRight />
 				</button>
 			</div>
-		</div>
+		</Link>
 	);
 }

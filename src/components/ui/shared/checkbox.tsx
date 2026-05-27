@@ -1,4 +1,4 @@
-import type { IFilter } from "../../models";
+import type { IFilter } from "../../../models";
 
 export default function Checkbox({ name, label }: IFilter) {
 	return (
