@@ -6,8 +6,11 @@ import Dropdown from "../components/ui/shared/dropdown";
 import {
 	auctionItems,
 	categoryFilters,
+	categoryOptions,
 	conditionFilters,
+	conditionOptions,
 	endingFilters,
+	endingOptions,
 } from "../data";
 
 export default function Auctions() {
@@ -24,13 +27,13 @@ export default function Auctions() {
 						</div>
 
 						<Dropdown
-							name="categories"
-							options={categoryFilters}
-							placeholder="Category"
+							name="sort_by"
+							options={categoryOptions}
+							placeholder="Sort by"
 						/>
 					</div>
 
-					<div className="flex gap-6">
+					<div className="flex flex-col gap-6 sm:flex-row ">
 						<div className="flex-2 border border-border h-min rounded-xl p-5 bg-surface">
 							<h4 className="text-xs text-text-3 font-bold uppercase mb-4 tracking-wider ">
 								Filters

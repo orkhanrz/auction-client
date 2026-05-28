@@ -1,5 +1,4 @@
 import { BsArrowRight } from "react-icons/bs";
-import { FcFolder } from "react-icons/fc";
 import CreateAuctionStep from "../components/auction/create-auction-step";
 import CreateAuctionStepLabel from "../components/auction/create-auction-step-label";
 import BackToBtn from "../components/ui/shared/back-to-btn";
@@ -9,9 +8,9 @@ import Content from "../components/ui/shared/content";
 import Input from "../components/ui/shared/input";
 import Dropdown from "../components/ui/shared/dropdown";
 import {
-	categoryFilters,
-	conditionFilters,
-	endingFilters,
+	categoryOptions,
+	conditionOptions,
+	endingOptions,
 	estimatedDelivers,
 } from "../data";
 import FileInput from "../components/ui/shared/file-input";
@@ -48,7 +47,7 @@ export default function CreateAuction() {
 							name="category"
 							label="Category *"
 							placeholder="Select category"
-							options={categoryFilters}
+							options={categoryOptions}
 						/>
 						<Input
 							label="Description *"
@@ -58,7 +57,7 @@ export default function CreateAuction() {
 							name="condition"
 							label="Condition"
 							placeholder="Select condition"
-							options={conditionFilters}
+							options={conditionOptions}
 						/>
 					</CreateAuctionStep>
 
@@ -84,7 +83,7 @@ export default function CreateAuction() {
 								name="duration"
 								label="Duration *"
 								placeholder="Select duration"
-								options={endingFilters}
+								options={endingOptions}
 								className="flex-1"
 							/>
 							<Input

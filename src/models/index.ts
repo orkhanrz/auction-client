@@ -13,9 +13,15 @@ export interface IAuction {
 	timeLeft: string;
 }
 
-export interface IOption {
+export interface IDropdownItem {
+	id: number;
 	label: string;
 	value: string;
+}
+
+export interface ICheckboxItem {
+	label: string;
+	name: string;
 }
 
 export interface IAuctionBidHistoryItem {

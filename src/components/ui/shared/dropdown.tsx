@@ -1,11 +1,11 @@
-import type { IOption } from "../../../models";
+import type { IDropdownItem } from "../../../models";
 
 type Props = {
 	label?: string;
 	placeholder?: string;
 	className?: string;
 	name: string;
-	options: IOption[];
+	options: IDropdownItem[];
 };
 
 export default function Dropdown({
@@ -28,7 +28,9 @@ export default function Dropdown({
 			>
 				{placeholder && <option>{placeholder}</option>}
 				{options.map((option) => (
-					<option value={option.value}>{option.label}</option>
+					<option value={option.value} key={option.id}>
+						{option.label}
+					</option>
 				))}
 			</select>
 		</div>

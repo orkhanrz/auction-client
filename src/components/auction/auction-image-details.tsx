@@ -5,7 +5,7 @@ import AuctionImages from "./auction-images";
 export default function AuctionImageDetails() {
 	return (
 		<>
-			<div className="image-wrapper relative rounded-xl overflow-hidden h-[300px] mb-2">
+			<div className="image-wrapper relative rounded-xl overflow-hidden h-75 mb-2">
 				<p className="absolute top-4 right-4 bg-surface text-text text-xs px-2 py-0.5 rounded-sm">
 					1/5
 				</p>

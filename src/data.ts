@@ -1,4 +1,9 @@
-import type { IAuction, ICategory, IOption } from "./models";
+import type {
+	IAuction,
+	ICategory,
+	ICheckboxItem,
+	IDropdownItem,
+} from "./models";
 
 export const categories: ICategory[] = [
 	{
@@ -71,85 +76,164 @@ export const auctionItems: IAuction[] = [
 	},
 ];
 
-export const categoryFilters = [
+export const categoryOptions: IDropdownItem[] = [
 	{
+		id: 1,
 		label: "Electronics",
 		value: "electronics",
 	},
 	{
+		id: 2,
 		label: "Appliances",
 		value: "appliances",
 	},
 	{
+		id: 3,
 		label: "Fashion",
 		value: "fashion",
 	},
 	{
+		id: 4,
 		label: "Furniture",
 		value: "furniture",
 	},
 	{
+		id: 5,
 		label: "Collectibles",
 		value: "collectibles",
 	},
 ];
 
-export const conditionFilters = [
+export const conditionOptions: IDropdownItem[] = [
 	{
+		id: 1,
 		label: "New",
 		value: "new",
 	},
 	{
+		id: 2,
 		label: "Like new",
 		value: "likeNew",
 	},
 	{
+		id: 3,
 		label: "Good",
 		value: "good",
 	},
 	{
+		id: 4,
 		label: "Fair",
 		value: "fair",
 	},
 ];
 
-export const endingFilters: IOption[] = [
+export const endingOptions: IDropdownItem[] = [
 	{
+		id: 1,
 		label: "1 day",
 		value: "1",
 	},
 	{
+		id: 2,
 		label: "3 days",
 		value: "3",
 	},
 	{
+		id: 3,
 		label: "5 days",
 		value: "5",
 	},
 	{
+		id: 4,
 		label: "7 days",
 		value: "7",
 	},
 ];
 
+export const categoryFilters: ICheckboxItem[] = [
+	{
+		label: "Electronics",
+		name: "electronics",
+	},
+	{
+		label: "Appliances",
+		name: "appliances",
+	},
+	{
+		label: "Fashion",
+		name: "fashion",
+	},
+	{
+		label: "Furniture",
+		name: "furniture",
+	},
+	{
+		label: "Collectibles",
+		name: "collectibles",
+	},
+];
+
+export const conditionFilters: ICheckboxItem[] = [
+	{
+		label: "New",
+		name: "new",
+	},
+	{
+		label: "Like new",
+		name: "likeNew",
+	},
+	{
+		label: "Good",
+		name: "good",
+	},
+	{
+		label: "Fair",
+		name: "fair",
+	},
+];
+
+export const endingFilters: ICheckboxItem[] = [
+	{
+		label: "1 day",
+		name: "1",
+	},
+	{
+		label: "3 days",
+		name: "3",
+	},
+	{
+		label: "5 days",
+		name: "5",
+	},
+	{
+		label: "7 days",
+		name: "7",
+	},
+];
+
 export const estimatedDelivers = [
 	{
+		id: 1,
 		label: "2-3 business day",
 		value: "2-3",
 	},
 	{
+		id: 2,
 		label: "3-5 business day",
 		value: "3-5",
 	},
 	{
+		id: 3,
 		label: "5-7 business day",
 		value: "5-7",
 	},
 	{
+		id: 4,
 		label: "1-2 weeks",
 		value: "7-14",
 	},
 	{
+		id: 5,
 		label: "Local pickup only",
 		value: "local",
 	},

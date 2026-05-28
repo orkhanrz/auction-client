@@ -1,6 +1,6 @@
-import type { IFilter } from "../../../models";
+import type { ICheckboxItem } from "../../../models";
 
-export default function Checkbox({ name, label }: IFilter) {
+export default function Checkbox({ name, label }: ICheckboxItem) {
 	return (
 		<li className="flex gap-2 mb-2.5">
 			<input

@@ -11,7 +11,7 @@ export default function SignIn() {
 		<div className="bg-surface">
 			<Container>
 				<Content className="flex justify-center py-12">
-					<div className="bg-surface rounded-xl py-9 px-8 w-sm border border-border">
+					<div className="bg-surface rounded-xl py-9 px-4 sm:px-8 w-sm border border-border">
 						<h3 className="text-lg font-extrabold text-text mb-2">
 							Bid<span className="text-lime">Vault</span>
 						</h3>

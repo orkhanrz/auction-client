@@ -1,9 +1,9 @@
-import type { IFilter } from "../models";
+import type { ICheckboxItem } from "../models";
 import Checkbox from "./ui/shared/checkbox";
 
 type Props = {
 	title: string;
-	items: IFilter[];
+	items: ICheckboxItem[];
 	className?: string;
 };
 
